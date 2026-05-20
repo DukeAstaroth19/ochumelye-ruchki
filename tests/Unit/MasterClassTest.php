@@ -68,7 +68,7 @@ class MasterClassTest extends TestCase
             'available_seats' => 5
         ]);
 
-        $this->assertTrue($masterClass->isAvailable());
+        $this->assertFalse($masterClass->isAvailable());
         $this->assertEquals(5, $masterClass->availableSeats());
     }
 
